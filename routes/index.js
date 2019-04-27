@@ -27,6 +27,11 @@ router.get('/contact', function(req, res){
       title: 'Login'
     });
    });
+   router.get('/pay',function(req,res){
+     res.render('pay', {
+       title: 'Pay'
+     });
+   });
     router.get('/register', function(req, res){
       res.render('register', {
         title: 'Register'
@@ -37,4 +42,10 @@ router.get('/booking', function(req, res){
       title: 'Booking'
     });
   });
+  router.get('/event', function(req, res){
+    res.render('event', {
+      title: 'Event Registration'
+    });
+  });
+
 module.exports = router;

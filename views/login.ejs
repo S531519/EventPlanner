@@ -1,44 +1,17 @@
-<body>
-<div class="custom-container" ng-controller="UserLoginCtrl" >
-        <div class="signIn" >
-          
-                      
-                     <div class="signIn-form">
-                        <h3>Sign In</h3>
-                        <br>
-                        <br>
-                        
-                        <form novalidate method="POST" action="/login" name="loginForm">
-      
-                          <div class="row">
-                            <div class="col-sm-6">
-                              <div class="form-group">
-                                <label for="email" class="control-label">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Email" autofocus class="form-control" required ng-model="login"
-                                />
-                              </div>
-                              <div class="form-group">
-                                <label for="password" class="control-label">Password</label>
-                                <input type="password" name="password" id="password" placeholder="Password" class="form-control" required ng-model="psw"
-                                />
-                              </div>
-                              <div class="form-group">
-                                <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">
-                                  <i class="fa fa-user"></i>Login
-                                </button>
-      
-                              </div>
-                            </div>
-                            
-                          </div>
-                        </form>
-                        <div >
-                        <form action='forgot' method="POST">
-                          <button type="submit" name="submit" class="btn btn-danger">Forgot your password?</button>
-                        </form>
-                        </div>
-                        </div>
-                      </div>
-                      </div>
+<body class="text-center" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <form class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
       </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  
+
 </body>
